@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/coordinatorlayout"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.auth.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:text="Instagram"
+                android:textColor="@color/orange_800"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/tfd_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="enter your email"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/tfd_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter your password"
+                app:endIconMode="password_toggle"
+                app:errorEnabled="true"
+                android:layout_marginTop="16dp"
+                app:helperTextEnabled="true"
+
+
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:padding="18dp"
+                android:text="    login    "
+                android:textColor="@color/black"
+                android:backgroundTint="@color/orange_600"
+                />
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="you dont have an account?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="     signup"
+                    android:textSize="17sp"
+                    android:textColor="@color/orange_800"
+                    android:textStyle="bold"
+
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
